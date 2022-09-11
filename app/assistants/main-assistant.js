@@ -14,6 +14,11 @@ function MainAssistant() {
 }
 
 MainAssistant.prototype.setup = function() {
+    
+    //Default to dark theme
+    if (Object.keys(appModel.AppSettingsCurrent).indexOf('ThemePreference') == -1)
+        appModel.AppSettingsCurrent["ThemePreference"] = "palm-default";
+    appModel.SetThemePreference(this.controller);
 
     //Controls Drawer
     this.controller.setupWidget("drawerControls",
@@ -132,9 +137,7 @@ MainAssistant.prototype.handleUpdateResponse = function(responseObj) {
 }
 
 MainAssistant.prototype.activate = function(event) {
-    //Load preferences
-    appModel.LoadSettings();
-    Mojo.Log.info("settings now: " + JSON.stringify(appModel.AppSettingsCurrent));
+
     this.zoomLevel = appModel.AppSettingsCurrent["DefaultZoom"];
     serviceModel.UseCustomEndpoint = appModel.AppSettingsCurrent["UseCustomEndpoint"];
     serviceModel.CustomEndpointURL = appModel.AppSettingsCurrent["EndpointURL"];
