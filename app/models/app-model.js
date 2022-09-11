@@ -2,7 +2,7 @@
 App Model
  Version 1.0
  Created: 2018-2022
- Author: Jonathan Wise
+ Author: Jon W
  License: MIT
  Description: Common functions for webOS apps, particularly for managing persisted options in cookies
 */

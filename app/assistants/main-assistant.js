@@ -231,7 +231,7 @@ MainAssistant.prototype.handleCommand = function(event) {
                 stageController.pushScene({ name: "preferences", disableSceneScroller: false });
                 break;
             case 'do-myAbout':
-                Mojo.Additions.ShowDialogBox("Map Lite - " + Mojo.Controller.appInfo.version, "Map Lite client for webOS. Copyright 2021, Jon Wise. Distributed under an MIT License, and powered by Bing Maps and IPInfo.io.<br>Source code available at: https://github.com/codepoet80/webos-maplite");
+                Mojo.Additions.ShowDialogBox("Map Lite - " + Mojo.Controller.appInfo.version, "Map Lite client for webOS. Copyright 2022, webOS Archive. Distributed under an MIT License, and powered by Bing Maps and IPInfo.io.<br>Source code available at: https://github.com/webosarchive/webos-maplite");
                 break;
         }
     }

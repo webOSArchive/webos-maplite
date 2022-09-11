@@ -2,13 +2,13 @@
 Maps Service Model - Mojo
  Version 1.0
  Created: 2021-2022
- Author: Jonathan Wise
+ Author: Jon W
  License: MIT
  Description: A model to interact with Retro Map service within a Mojo app.
 */
 
 var ServiceModel = function() {
-    this.urlBase = "http://maps.webosarchive.com/";
+    this.urlBase = "http://maps.webosarchive.org/";
     this.supportedMapTypes = ["Road", "Aerial", "AerialWithLabels"]
 };
 
