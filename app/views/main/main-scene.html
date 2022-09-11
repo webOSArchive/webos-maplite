@@ -1,0 +1,41 @@
+<div class="palm-page-header" id="divTitle">
+    <div class="header-icon appicon"></div>
+    <div class="header-text">
+        <span x-mojo-loc=''>Map lite</span>
+    </div>
+    <div x-mojo-element="Spinner" class="spinnerClass" id="spinnerLoad" name="spinnerLoad" style="float:right;margin-top:-28px; margin-right:-12px"></div>
+</div>
+<div x-mojo-element="Drawer" id="drawerControls" class="drawerClass" name="drawerControls">
+        <div class="palm-list">
+            <div class="palm-row first">
+                <div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+                    <div class="title">
+                        <div class="search-bar">
+                            <div id="btnClear" class="icon right submit" style="visibility:visible;position:relative;z-index:1" x-mojo-touch-feedback="immediate"></div>
+                            <div class="textfield-search" id="txtSearch" x-mojo-element="TextField"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="palm-row" style="display: none;">
+                <div class="palm-row-wrapper" style="margin-left: 20%; margin-right: 20%;">
+                    <div x-mojo-element="Button" id="btnGet" class="buttonClass" name="btnGet"></div>
+                </div>
+            </div>
+            <div class="palm-row last">
+                <div class="palm-row-wrapper">
+                    <div id="listJumpLocations" x-mojo-element="ListSelector" title="Jump Locations" class="right"></div>
+                </div>
+            </div>
+    </div>
+</div> 
+
+<div x-mojo-element="Scroller" id="divShowResultImage" class="scrollerClass" name="divShowResultImage">
+  <img id="imgMap" src="">
+</div>
+
+<!-- Direction Buttons -->
+<img id="imgWest" style="position:absolute;top:120px;left:0px;padding-right:10px;visibility:hidden;" src="images/arrowWest.png" />
+<img id="imgEast" style="position:absolute;top:120px;right:0px;padding-left:10px;visibility:hidden;" src="images/arrowEast.png" />
+<img id="imgNorth" style="position:absolute;top:0px;left:120px;padding-bottom:10px;visibility:hidden;" src="images/arrowNorth.png" />
+<img id="imgSouth" style="position:absolute;top:280px;left:120px;padding-top:0px;visibility:hidden;" src="images/arrowSouth.png" />
