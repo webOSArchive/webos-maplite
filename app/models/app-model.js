@@ -20,6 +20,7 @@ var AppModel = function() {
     //Define your app preferences (to be saved by OS)
     this.AppSettingsCurrent = null;
     this.AppSettingsDefaults = {
+        ThemePreference: "palm-default",
         UseCustomEndpoint: false,
         EndpointURL: "",
         DefaultZoom: 9,
