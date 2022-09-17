@@ -15,7 +15,7 @@ function MainAssistant() {
 
 MainAssistant.prototype.setup = function() {
     
-    //Default to dark theme
+    //Default to light theme
     if (Object.keys(appModel.AppSettingsCurrent).indexOf('ThemePreference') == -1)
         appModel.AppSettingsCurrent["ThemePreference"] = "palm-default";
     appModel.SetThemePreference(this.controller);
