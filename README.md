@@ -12,6 +12,12 @@ Uses [Retro Maps](https://github.com/webosarchive/maplite-service) which is host
 
 You can also self-host the services, see the [instructions here](https://github.com/webosarchive/maplite-service/blob/master/readme.md).
 
+## Archival
+
+In 2024, the last major tile-based mapping API was shut-down, making it difficult/impossible to maintain any kind of maps app on a device this old. As a result, this app has been archived.
+
+If you have a solution, feel free to fork and create your own derivative work for the community!
+
 ## What is This?
 
 This is an app for the defunct mobile webOS platform, made by Palm and later acquired by HP. It runs on devices like the Palm Pre or Pixi, or the HP
